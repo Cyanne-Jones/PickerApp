@@ -1,3 +1,7 @@
 .chassis {
-  background-color: #ffe347 ;
+  background-color: #ffe347;
+  height: 100%;
+  width: 80%;
+  border-radius: 135px 135px 0px 0px;
+  box-shadow: inset 10px 0px 20px #DEAC2B;
 }
