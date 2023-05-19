@@ -19,8 +19,13 @@ export const Screen = () => {
 
   return (
     <div className='screen'>
-      <h1>Who is here today?</h1>
-      <div className='inputContainer'>
+      {pickedHuman ? 
+        <div className='pickedHumanContainer'>
+          <h1>{pickedHuman}!</h1>
+        </div> : 
+        <>
+        <h1>Who is here today?</h1>
+        <div className='inputContainer'>
       <label className='inputLabel'>
           <input 
             className='checkbox' 
@@ -62,6 +67,8 @@ export const Screen = () => {
           Cyanne
         </label>
       </div>
+      </>
+      }
     </div>
   )
 }

@@ -13,4 +13,7 @@ export const useHumanStore = create((set) => ({
 
     return ({pickedHuman: pickedHuman})
   }),
+  resetPickedHuman: () => set((state) => {
+    return ({pickedHuman: ''})
+  })
 }));

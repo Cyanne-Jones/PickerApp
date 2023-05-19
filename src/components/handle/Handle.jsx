@@ -7,13 +7,21 @@ export const Handle = () => {
   const setPickedHuman = useHumanStore((state) => state.setPickedHuman)
   const pickedHuman = useHumanStore((state) => state.pickedHuman)
   const humans = useHumanStore((state) => state.humans)
+  const resetPickedHuman = useHumanStore((state) => state.resetPickedHuman)
+  const setHumans = useHumanStore((state) => state.setHumans)
+
 
   const handleClick = () => {
     setIsAnimating(true)
     setTimeout(()=> {
       setIsAnimating(false)
     }, 3000)
+    if(pickedHuman) {
+      resetPickedHuman()
+      setHumans([])
+    } else {
     setPickedHuman(humans.length)
+    }
   }
   return (
     <div className='handle' onClick={handleClick}>
