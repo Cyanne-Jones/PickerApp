@@ -1,11 +1,14 @@
 import './Screen.css'
 import { useHumanStore } from '../hooks/useHumanStore'
 
+import JSConfetti from 'js-confetti'
+
 export const Screen = () => {
 
   const setHumans = useHumanStore((state) => state.setHumans)
   const pickedHuman = useHumanStore((state) => state.pickedHuman)
   const humans = useHumanStore((state) => state.humans)
+  const jsConfetti = new JSConfetti()
 
   const handleCheck = (humanName) => {
     if (!humans.includes(humanName)) {
@@ -14,6 +17,14 @@ export const Screen = () => {
       const filteredHumans = humans.filter(name => name !== humanName)
       setHumans(filteredHumans)
     }
+  }
+
+  const confettiColors = ['#ffe347', '#6457a6', '#7d7abc', '#ef767a', '#23f0c7']
+
+  if (pickedHuman) {
+    jsConfetti.addConfetti({
+      confettiColors,
+    })
   }
 
 
