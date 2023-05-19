@@ -1,0 +1,54 @@
+.screen {
+  background-color: #366159;
+  height: 300px;
+  width: 80%;
+  box-shadow: 0px -10px 10px #DEAC2B, inset 2px 10px 10px #062a23;
+  border-radius: 70px;
+  margin-top: 20px;
+  color: rgb(35, 240, 199);
+  animation: flicker 1.5s infinite alternate;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.inputLabel {
+  display: flex;
+  align-items: center;
+  margin: 5px;
+  font-size: 20px;
+}
+
+.inputLabel input[type=checkbox] {
+  cursor: pointer;
+  accent-color: cyan;
+  opacity: 0.5;
+  border: 10px solid rgb(35, 240, 199);
+}
+
+.checkbox {
+  height: 25px;
+  width: 25px;
+}
+
+/* Flickering animation */
+@keyframes flicker {
+    
+  0%, 18%, 22%, 25%, 53%, 57%, 100% {
+
+      text-shadow:
+      0 0 4px rgba(35, 240, 199, 0.3),
+      0 0 11px rgba(250, 250, 250, 0.5),
+      0 0 19px rgba(250, 250, 250, 0.5),
+      0 0 40px rgba(35, 240, 199, 0.3),
+      0 0 80px rgba(35, 240, 199, 0.5),
+      0 0 90px rgba(35, 240, 199, 0.3),
+      0 0 100px rgba(35, 240, 199, 0.5),
+      0 0 150px rgba(35, 240, 199, 0.5);
+  
+  }
+  
+  20%, 24%, 55% {        
+      text-shadow: none;
+  }    
+}

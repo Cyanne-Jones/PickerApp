@@ -1,0 +1,18 @@
+.chassis {
+  background-color: #ffe347;
+  height: 100%;
+  width: 80%;
+  border-radius: 135px 135px 0px 0px;
+  box-shadow: inset 0px 0px 25px 15px #DEAC2B;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title {
+  background: linear-gradient(45deg, #aaaaaa, #eeeeee, #aaaaaa, #eeeeee, #aaaaaa, #eeeeee);
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 5px 0px 20px #DEAC2B;
+  text-shadow: 0px 0px 5px #525252;
+}

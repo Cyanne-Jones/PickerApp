@@ -1,0 +1,75 @@
+.handle {
+  height: 200px;
+  display: flex;
+  align-items: flex-end;
+  width: 200px;
+}
+
+.handle:hover {
+  cursor: pointer;
+}
+
+.shaft {
+  background: linear-gradient(rgb(152, 140, 9), rgb(183, 226, 250), gray);
+  border-radius: 0px 0px 10px 0px;
+  height: 20px;
+  width: 100px;
+}
+
+.arm {
+  width: 150px;
+  height: 200px;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  transform: translateX(-60px);
+}
+
+.ball {
+  height: 100px;
+  width: 100px;
+  border-radius: 100%;
+  background: linear-gradient(rgb(246, 232, 143), #F66B71) ;
+  box-shadow: inset 0px -15px 20px #900880;
+}
+
+.cam {
+  height: 100px;
+  width: 20px;
+  background: linear-gradient(90deg, rgb(152, 140, 9), rgb(183, 226, 250), rgb(76, 104, 128));
+  border-radius: 0px 0px 10px 0px;
+}
+
+.cam-animate {
+  animation: camAnimate 3s ease-in-out;
+}
+  
+
+.ball-animate {
+  animation: ballAnimate 3s ease-in-out;
+}
+
+@keyframes ballAnimate {
+  0% {
+    transform: translateY(0px)
+  }
+  50% {
+    transform: translateY(75px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+@keyframes camAnimate {
+  0% {
+    height: 100px
+  }
+  40% {
+    height: 0px;
+  }
+  100% {
+    height: 100px;
+    /* transform: translateY(0px); */
+  }
+}

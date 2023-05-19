@@ -1,9 +1,10 @@
 import './App.css';
+import { MachineContainer } from '../machineContainer/MachineContainer';
 
 function App() {
   return (
     <div className="App">
-      <h1>Hello World!</h1>
+      <MachineContainer />
     </div>
   );
 }
