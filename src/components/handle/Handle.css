@@ -41,12 +41,12 @@
 }
 
 .cam-animate {
-  animation: camAnimate 3s ease-in-out;
+  animation: camAnimate 1.5s ease-in-out;
 }
   
 
 .ball-animate {
-  animation: ballAnimate 3s ease-in-out;
+  animation: ballAnimate 1.5s ease-in-out;
 }
 
 @keyframes ballAnimate {

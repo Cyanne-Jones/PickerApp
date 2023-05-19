@@ -15,7 +15,7 @@ export const Handle = () => {
     setIsAnimating(true)
     setTimeout(()=> {
       setIsAnimating(false)
-    }, 3000)
+    }, 1500)
     if(pickedHuman) {
       resetPickedHuman()
       setHumans([])
