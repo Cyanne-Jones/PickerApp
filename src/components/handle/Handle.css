@@ -2,6 +2,7 @@
   height: 200px;
   display: flex;
   align-items: flex-end;
+  width: 200px;
 }
 
 .handle:hover {
