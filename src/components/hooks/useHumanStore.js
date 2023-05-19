@@ -6,9 +6,9 @@ export const useHumanStore = create((set) => ({
   setHumans: (data) => set(() => { 
     return ({ humans: data });
   }),
-  setPickedHuman: () => set((state) => {
+  setPickedHuman: (number) => set((state) => {
 
-    const pickedNumber = Math.floor(Math.random() * state.humans.length())
+    const pickedNumber = Math.floor(Math.random() * number)
     const pickedHuman = state.humans[pickedNumber]
 
     return ({pickedHuman: pickedHuman})
