@@ -33,6 +33,28 @@
   box-shadow: inset 0px -15px 20px #900880;
 }
 
+.ball:hover {
+  animation: ballHover 1s infinite ease-in-out;
+}
+
+@keyframes ballHover {
+  0% {
+    background: linear-gradient(rgb(246, 232, 143), #F66B71) ;
+    box-shadow: inset 0px -15px 20px #900880;
+    box-shadow: 0px 0px 30px 10px rgb(238, 200, 12);
+  }
+  50% {
+    background: linear-gradient(rgb(244, 194, 45), #eb2f38) ;
+    box-shadow: inset 0px -15px 20px #660c5b;
+    box-shadow: 0px 0px 30px 10px #f66868;
+  }
+  100% {
+    background: linear-gradient(rgb(246, 232, 143), #F66B71) ;
+    box-shadow: inset 0px -15px 20px #900880;
+    box-shadow: 0px 0px 30px 10px rgb(238, 200, 12);
+  }
+}
+
 .cam {
   height: 100px;
   width: 20px;
