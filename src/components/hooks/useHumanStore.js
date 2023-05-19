@@ -1,4 +1,4 @@
-import create from "zustand";
+import { create } from "zustand";
 
 export const useHumanStore = create((set) => ({
   humans: [],
@@ -12,5 +12,5 @@ export const useHumanStore = create((set) => ({
     const pickedHuman = state.humans[pickedNumber]
 
     return ({pickedHuman: pickedHuman})
-  })
+  }),
 }));
