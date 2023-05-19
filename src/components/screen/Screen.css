@@ -59,4 +59,17 @@
   align-items: center;
   justify-content: center;
   font-size: 64px;
+  animation: popIn 1.5s;
+}
+
+@keyframes popIn {
+  0% {
+    opacity: 0%;
+  }
+  50% {
+    opacity: 1%;
+  }
+  100% {
+    opacity: 100%;
+  }
 }

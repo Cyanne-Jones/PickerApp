@@ -1,3 +1,4 @@
+import { useState } from 'react'
 import './Screen.css'
 import { useHumanStore } from '../hooks/useHumanStore'
 
@@ -20,11 +21,14 @@ export const Screen = () => {
   }
 
   const confettiColors = ['#ffe347', '#6457a6', '#7d7abc', '#ef767a', '#23f0c7']
-
+  
   if (pickedHuman) {
-    jsConfetti.addConfetti({
-      confettiColors,
-    })
+    setTimeout(() => {
+      jsConfetti.addConfetti({
+        confettiRadius: 3,
+        confettiColors,
+      })
+    }, 1000)
   }
 
 
