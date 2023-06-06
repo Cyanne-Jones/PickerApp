@@ -81,6 +81,36 @@ export const Screen = () => {
             value='Cyanne'/>
           Cyanne
         </label>
+        <label className='inputLabel'>
+          <input 
+            className='checkbox' 
+            onChange={() => {handleCheck('Ben')}}
+            type='checkbox' 
+            id='ben' 
+            name='name' 
+            value='Ben'/>
+          Ben
+        </label>
+        <label className='inputLabel'>
+          <input 
+            className='checkbox' 
+            onChange={() => {handleCheck('Jefry')}}
+            type='checkbox' 
+            id='jefry' 
+            name='name' 
+            value='Jefry'/>
+          Jefry
+        </label>
+        <label className='inputLabel'>
+          <input 
+            className='checkbox' 
+            onChange={() => {handleCheck('Jorge')}}
+            type='checkbox' 
+            id='jorge' 
+            name='name' 
+            value='Jorge'/>
+          Jorge
+        </label>
       </div>
       </>
       }

@@ -17,7 +17,7 @@
   display: flex;
   align-items: center;
   margin: 5px;
-  font-size: 20px;
+  font-size: 18px;
 }
 
 .inputLabel input[type=checkbox] {
@@ -28,8 +28,8 @@
 }
 
 .checkbox {
-  height: 25px;
-  width: 25px;
+  height: 20px;
+  width: 20px;
 }
 
 /* Flickering animation */
