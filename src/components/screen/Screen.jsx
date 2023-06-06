@@ -54,12 +54,12 @@ export const Screen = () => {
         <label className='inputLabel'>
           <input 
             className='checkbox' 
-            onChange={() => {handleCheck('Mike')}}
+            onChange={() => {handleCheck('Jared')}}
             type='checkbox' 
-            id='mike' 
+            id='jared' 
             name='name' 
-            value='Mike'/>
-          Mike
+            value='Jared'/>
+          Jared
         </label>
         <label className='inputLabel'>
           <input 
